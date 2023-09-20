@@ -12,11 +12,11 @@ function App() {
           src="public/images/purple-blur.png"
           alt=""
         />
-        {/* <img
+        <img
           className="purple-blur"
-          src="public/images/purple-blur.png"
+          src="public/images/purple-blur-2.png"
           alt=""
-        /> */}
+        />
         <Navbar />
         <Hero />
       </div>

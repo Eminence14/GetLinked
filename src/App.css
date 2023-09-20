@@ -60,21 +60,28 @@ body {
 }
 img.purple-blur {
   position: absolute;
-  width: 100%;
-  opacity: 0.8;
+  width: 24.75rem;
+  height: 27.625rem;
+  left: -90px;
 }
-img.purple-blur:nth-child(1) {
-  top: 100px;
-  left: -70px;
+img.purple-blur:nth-child(2) {
+  display: none;
 }
-/* img.purple-blur:nth-child(2)
-{
-  top: 0;
-  right: -40px;
-} */
 
 @media screen and (min-width: 1024px) {
   body {
     font-size: 20px;
+  }
+  img.purple-blur {
+    right: 0;
+    left: 100px;
+    top: 100px;
+  }
+  img.purple-blur:nth-child(2) {
+    display: block;
+    width: 59.4375rem;
+    height: 62.125rem;
+    top: -50px;
+    left: 350px;
   }
 }
