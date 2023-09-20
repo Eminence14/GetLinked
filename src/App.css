@@ -1,11 +1,12 @@
 :root {
-  --primary: #D434FE;
-  --secondary: #903AFF;
-  --tertiary: #150E28;
+  --primary: #d434fe;
+  --secondary: #903aff;
+  --tertiary: #150e28;
   --neutral: #ffffff;
-  --gradient: linear-gradient(to left, #903AFF , #FE34B9);
+  --gradient: linear-gradient(to left, #903aff, #fe34b9);
 }
-html, body {
+html,
+body {
   font-size: 16px;
   font-family: Montserrat, sans-serif;
 }
@@ -44,15 +45,33 @@ html, body {
   font-family: Montserrat, sans-serif;
 }
 .clash {
-    font-family: 'Clash Display', sans-serif;
-    font-weight: 700;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 700;
 }
 .logo > span:nth-child(1) {
-    color: var(--neutral);
+  color: var(--neutral);
 }
 .logo > span:nth-child(2) {
-    color: var(--primary    );
+  color: var(--primary);
 }
+.header {
+  position: relative;
+  background-color: var(--tertiary);
+}
+img.purple-blur {
+  position: absolute;
+  width: 100%;
+  opacity: 0.8;
+}
+img.purple-blur:nth-child(1) {
+  top: 100px;
+  left: -70px;
+}
+/* img.purple-blur:nth-child(2)
+{
+  top: 0;
+  right: -40px;
+} */
 
 @media screen and (min-width: 1024px) {
   body {

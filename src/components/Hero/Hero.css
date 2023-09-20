@@ -1,0 +1,133 @@
+.hero-wrapper {
+  background-color: var(--tertiary);
+  text-align: center;
+}
+.hero-wrapper header {
+  position: relative;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.hero-wrapper header h3 {
+  color: var(--neutral);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+}
+.hero-wrapper header img {
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  width: 7.5875rem;
+  height: 0.4375rem;
+}
+
+.left .intro {
+  margin-top: 3em;
+  color: var(--neutral);
+  position: relative;
+}
+.left .intro h2 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 2rem;
+}
+img.hero-bulb {
+  position: absolute;
+  transform: translate(83px, -16px);
+  width: 1.25rem;
+  height: 1.65rem;
+}
+img.hero-ill {
+  width: 2.05rem;
+  transform: translateY(5px);
+}
+span.hack-num {
+  color: var(--primary);
+}
+.left > div > p {
+  font-size: 0.8125rem;
+  color: var(--neutral);
+  max-width: 290px;
+  margin: 0.5em auto 2em;
+  line-height: 1.8em;
+}
+.left .timer {
+  color: var(--neutral);
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  margin: 2em 0;
+}
+.left .timer .timer-number {
+  font-family: "Unica One", cursive;
+  font-size: 3rem;
+}
+.left .timer .timer-number:not(:first-child) {
+  margin-left: 0.5em;
+}
+
+.hero-container .right {
+  position: relative;
+}
+.hero-container .right img {
+  width: 100%;
+}
+.hero-container .right img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  height: 22rem;
+}
+@media screen and (min-width: 540px) {
+  .hero-container .right img:nth-child(2) {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-wrapper {
+    text-align: left;
+  }
+  .hero-wrapper header {
+    margin-right: 2em;
+    max-width: 550px;
+  }
+  .hero-wrapper header h3 {
+    font-size: 1.5rem;
+  }
+  .hero-wrapper header img {
+    width: 17rem;
+    height: 0.69019rem;
+    right: -10px;
+  }
+  .hero-container {
+    display: flex;
+    margin-top: 3em;
+  }
+  .hero-container > div {
+    flex: 1;
+  }
+  .hero-container .left {
+    margin-left: 4em;
+    transform: translateX(30px);
+  }
+  .left .intro h2 {
+    font-size: 3rem;
+  }
+  img.hero-bulb {
+    width: 3rem;
+    height: 4rem;
+    transform: translate(300px, -50px);
+  }
+  img.hero-ill.ill1 {
+    transform: translateY(10px);
+    width: 3rem;
+  }
+  img.hero-ill.ill2 {
+    transform: translateY(2px);
+    width: 2rem;
+  }
+  .left > div > p {
+    margin: 1.5em 0 2em;
+    max-width: 340px;
+  }
+}
